@@ -2,11 +2,12 @@ import React from 'react'
 import './App.css';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import LandingPage from './Components/LandingPage/LandingPage'
 
 function App() {
   return (
     <div>
-      <CarouselProvider
+      {/* <CarouselProvider
       naturalSlideWidth={100}
       naturalSlideHeight={100}
       totalSlides={3}>
@@ -17,7 +18,8 @@ function App() {
         </Slider>
         <ButtonBack> Back </ButtonBack>
         <ButtonNext> Next </ButtonNext>
-      </CarouselProvider>
+      </CarouselProvider> */}
+      <LandingPage/>
     </div>
   );
 }
