@@ -7,7 +7,7 @@ import LandingPage from './Components/LandingPage/LandingPage'
 function App() {
   return (
     <div>
-      {/* <CarouselProvider
+      <CarouselProvider
       naturalSlideWidth={100}
       naturalSlideHeight={100}
       totalSlides={3}>
@@ -18,8 +18,8 @@ function App() {
         </Slider>
         <ButtonBack> Back </ButtonBack>
         <ButtonNext> Next </ButtonNext>
-      </CarouselProvider> */}
-      <LandingPage/>
+      </CarouselProvider>
+      {/* <LandingPage/> */}
     </div>
   );
 }
