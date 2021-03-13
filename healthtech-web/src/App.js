@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CarouselProvider
+      naturalSlideWidth={100}
+      naturalSlideHeight={100}
+      totalSlides={3}>
+        <Slider>
+          <Slide index={0} style={{backgroundColor: "blue"}}> Slide 0 </Slide>
+          <Slide index={1} style={{backgroundColor: "red"}}> Slide 1 </Slide>
+          <Slide index={2} style={{backgroundColor: "orange"}}> Slide 2 </Slide>
+        </Slider>
+        <ButtonBack> Back </ButtonBack>
+        <ButtonNext> Next </ButtonNext>
+      </CarouselProvider>
     </div>
   );
 }
