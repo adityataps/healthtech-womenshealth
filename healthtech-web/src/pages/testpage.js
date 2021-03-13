@@ -7,15 +7,15 @@ function TestPage() {
     return (
         <div>
             <OverlayScrollbarsComponent
-                options={{ scrollbars: { autoHide: 'scroll' } }}
+                options={{ scrollbars: { visibility: 'auto', autoHide: 'move' } }}
                 className={"page-wrapper"}
                 >
 
-                <b style={{"font-size": "300px"}}> Hello this is Senor Test page </b>
+                <b style={{"fontSize": "300px"}}> Hello this is Senor Test page </b>
 
             </OverlayScrollbarsComponent>
         </div>
-    )
+    );
 }
 
-export default TestPage
+export default TestPage;
