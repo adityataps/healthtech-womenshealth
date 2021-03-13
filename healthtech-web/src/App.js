@@ -7,6 +7,7 @@ import {
 } from 'pure-react-carousel';
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
 import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import TestPage from "./pages/testpage";
 
 
