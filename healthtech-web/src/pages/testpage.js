@@ -1,0 +1,21 @@
+import React from 'react'
+import './testpage.css'
+import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+
+
+function TestPage() {
+    return (
+        <div>
+            <OverlayScrollbarsComponent
+                options={{ scrollbars: { autoHide: 'scroll' } }}
+                className={"page-wrapper"}
+                >
+
+                <b style={{"font-size": "300px"}}> Hello this is Senor Test page </b>
+
+            </OverlayScrollbarsComponent>
+        </div>
+    )
+}
+
+export default TestPage

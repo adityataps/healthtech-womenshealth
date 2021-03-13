@@ -1,0 +1,8 @@
+.app-wrapper {
+    overflow: hidden;
+    background-color: black;
+}
+
+.card {
+    overflow: hidden
+}
