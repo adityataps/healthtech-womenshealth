@@ -3,14 +3,14 @@
     background-color: black;
 }
 
-.card {
-    overflow: hidden
+.caro-card {
+    overflow: hidden;
 }
 
 .navs {
     width: 100vw;
-    /*height: 80px;*/
-    margin: 12% auto;
+    height: 100%;
+    margin: 10vh auto;
     text-align: center;
     align-content: center;
     justify-content: center;

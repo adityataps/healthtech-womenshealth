@@ -80,6 +80,7 @@ p {
     background-color: #2a72a2 !important;
     border-radius: 50px !important;
     font-family: 'Montserrat', sans-serif;
+    color: white !important;
 }
 
 .landing-button:hover {
