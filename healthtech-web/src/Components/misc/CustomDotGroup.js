@@ -3,7 +3,7 @@ import { Dot } from "pure-react-carousel";
 import React from "react";
 // import { Button, Icon, Container } from "semantic-ui-react";
 import Button from 'react-bootstrap/Button'
-import ButtonGroup from "react-bootstrap/ButtonGroup";
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import { Egg } from 'react-bootstrap-icons'
 import './CustomDotGroup.css'
 
@@ -16,7 +16,7 @@ const CustomDotGroup = ({ slides, size }) => (
             {[...Array(slides).keys()].map(slide => (
                 <Link to={`/${slide}`}>
 
-                    <Button className={"nav-button"} as={Dot} key={slide} slide={slide} disabled={null}>
+                    <Button className={"nav-button"} disabled={null} as={Dot} key={slide} slide={slide} >
                         <Egg />
                     </Button>
 

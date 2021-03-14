@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import {
-    CarouselProvider, Slider, Slide, Dot
+    CarouselProvider, Slider, Slide,
     // ButtonBack,
     // ButtonNext
 } from 'pure-react-carousel';
@@ -11,6 +11,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import TestPage from "./pages/testpage";
 import PCLTesting from './Components/PCLTesting/PCLTesting';
 import LandingPage from "./Components/LandingPage/LandingPage";
+import Treatments from "./Components/Treatments/Treatments";
 import CustomDotGroup from "./Components/misc/CustomDotGroup";
 
 
@@ -30,6 +31,7 @@ function App() {
                     naturalSlideWidth={1}
                     naturalSlideHeight={1}
                     totalSlides={3}
+                    visibleSlides={1}
                     touchEnabled={false}
                     dragEnabled={false}
                     isIntrinsicHeight={true}
@@ -42,22 +44,22 @@ function App() {
 
                         <Slide index={0}
                                className={"caro-card"}>
-                            <Route path={"/0"} />
+                            <Route exact path={"/0"} />
                             <LandingPage />
 
                         </Slide>
 
                         <Slide index={1}
-                            className={"caro-card"}>
-                            <Route path={"/1"} />
+                               className={"caro-card"}>
+                            <Route exact path={"/1"} />
                             <PCLTesting />
 
                         </Slide>
 
                         <Slide index={2}
-                            className={"caro-card"}>
-                            <Route path={"/2"} />
-                            <TestPage />
+                               className={"caro-card"}>
+                            <Route exact path={"/2"} />
+                            <Treatments />
 
                         </Slide>
                     </Slider>
