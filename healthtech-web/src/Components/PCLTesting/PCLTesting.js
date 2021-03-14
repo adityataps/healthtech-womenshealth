@@ -10,11 +10,12 @@ export default class PCLTesting extends React.Component {
                     <p>Women 21 and over should get tested yearly for signs of PCL.</p>
                     <p>Your care provider or doctor may conduct any of the following test:</p>
                     <div className="options">
-                        <div className="pap-exam">
+                        <div className="Pap">
                             <button variant="outline-secondary">Pap Exam</button>
                         </div>
                         <div className="HPV">
                             <button variant="outline-secondary">Human Papillomavirus (HPV)</button>
+                            <p></p>
                         </div>
                         <div className="VIA"> 
                             <button variant="outline-secondary">Visual Inspection with Acetic Acid (VIA)</button>
