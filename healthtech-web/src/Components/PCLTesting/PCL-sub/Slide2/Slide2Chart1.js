@@ -13,7 +13,7 @@ export default function S2C1() {
         title:{
             text: "HPV Variants Causing Cervical Cancer"
         },
-        // width: 500,
+        width: 500,
         data: [{
             type: "pie",
             indexLabel: "{label}: {y}%",
