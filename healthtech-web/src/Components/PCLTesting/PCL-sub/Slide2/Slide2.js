@@ -30,6 +30,30 @@ export default function Slide2() {
                 cancer, of which variants HPV16 and HPV18 cause 70% of instances.
             </p>
 
+            <div className={"s-head h1"}>
+                Testing and Results
+            </div>
+
+            <p className={"s-p"}>
+                Results are as follows:
+            </p>
+
+            <div className={"s-head h2"}>
+                Negative
+            </div>
+
+            <p className={"s-p"}>
+                Cells do not have an HPV type linked to cancer.
+            </p>
+
+            <div className={"s-head h2"}>
+                Positive
+            </div>
+
+            <p className={"s-p"}>
+                Cells show a HPV type that is linked to cervical cancer.
+            </p>
+
         </SubCard>
     )
 }
