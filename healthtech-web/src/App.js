@@ -46,14 +46,12 @@ function App() {
                                className={"card"}>
                             <Route path={"/0"} />
                             <LandingPage />
-                            {/*<NavDots style={{"width": "100%"}}/>*/}
 
                         </Slide>
 
                         <Slide index={1}>
                             <Route path={"/1"} />
-                            <TestPage />
-                            {/*<NavDots />*/}
+                            <PCLTesting />
 
                         </Slide>
 
@@ -73,7 +71,6 @@ function App() {
 
         </div>
 
-        // <PCLTesting/>
     );
 }
 
