@@ -5,10 +5,12 @@ import {
     // ButtonBack,
     // ButtonNext
 } from 'pure-react-carousel';
-import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import TestPage from "./pages/testpage";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import CustomDotGroup from "./Components/misc/CustomDotGroup";
 
 
 
@@ -25,14 +27,12 @@ function App() {
                     <Redirect to={"/0"} />
                 </Route>
 
-                {console.log(window.location.pathname.substr(window.location.pathname.lastIndexOf('/') + 1))}
-
                 <CarouselProvider
-                    naturalSlideWidth={100}
-                    naturalSlideHeight={100}
+                    naturalSlideWidth={1}
+                    naturalSlideHeight={1}
                     totalSlides={3}
-                    // touchEnabled={false}
-                    // dragEnabled={false}
+                    touchEnabled={false}
+                    dragEnabled={false}
                     isIntrinsicHeight={true}
                     currentSlide={window.location.pathname.substr(window.location.pathname.lastIndexOf('/') + 1)}
                 >
@@ -42,51 +42,29 @@ function App() {
                     >
 
                         <Slide index={0}
-                               className={"card"} style={{backgroundColor: "blue"}}
-                        >
-                            {/*<TestPage />*/}
-                            <Route path={"/0"} component={TestPage} />
-                            <NavDots />
+                               className={"card"}>
+                            <Route path={"/0"} />
+                            <LandingPage />
+                            {/*<NavDots style={{"width": "100%"}}/>*/}
 
                         </Slide>
 
-                        <Slide index={1} style={{backgroundColor: "red"}}>
-                            {/*<TestPage />*/}
-                            <Route path={"/1"} component={TestPage} />
-                            <NavDots />
+                        <Slide index={1}>
+                            <Route path={"/1"} />
+                            <TestPage />
+                            {/*<NavDots />*/}
 
                         </Slide>
 
-                        <Slide index={2} style={{backgroundColor: "orange"}}>
-                            {/*<TestPage />*/}
-                            <Route path={"/2"} component={TestPage} />
-                            <NavDots />
+                        <Slide index={2}>
+                            <Route path={"/2"} />
+                            <TestPage />
+                            {/*<NavDots />*/}
 
                         </Slide>
                     </Slider>
 
-                    {/*<Link to={"/0"}>*/}
-                    {/*    <Dot slide={0}>*/}
-                    {/*        Uno*/}
-                    {/*    </Dot>*/}
-                    {/*</Link>*/}
-
-                    {/*<Link to={"/1"}>*/}
-                    {/*    <Dot slide={1}>*/}
-                    {/*        Dos*/}
-                    {/*    </Dot>*/}
-                    {/*</Link>*/}
-
-                    {/*<Link to={"/2"}>*/}
-                    {/*    <Dot slide={2}>*/}
-                    {/*        Tres*/}
-                    {/*    </Dot>*/}
-                    {/*</Link>*/}
-
-                    {/*<Route path={"/"}>*/}
-                    {/*    <Redirect to={"/0"} />*/}
-                    {/*</Route>*/}
-
+                    <NavDots />
 
                 </CarouselProvider>
 
@@ -96,27 +74,16 @@ function App() {
     );
 }
 
-function NavDots() {
+export function NavDots() {
     return (
-        <div>
-            <Link to={"/0"}>
-                <Dot slide={0}>
-                    Uno
-                </Dot>
-            </Link>
 
-            <Link to={"/1"}>
-                <Dot slide={1}>
-                    Dos
-                </Dot>
-            </Link>
-
-            <Link to={"/2"}>
-                <Dot slide={2}>
-                    Tres
-                </Dot>
-            </Link>
+        <div className={"nav-container"}>
+            <div className={"navs"}>
+                <CustomDotGroup slides={3} />
+            </div>
         </div>
+
+
     )
 }
 
