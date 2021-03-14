@@ -17,8 +17,6 @@ import CustomDotGroup from "./Components/misc/CustomDotGroup";
 
 function App() {
 
-
-
     return (
         <div className={"app-wrapper"}>
 
@@ -43,22 +41,23 @@ function App() {
                     >
 
                         <Slide index={0}
-                               className={"card"}>
+                               className={"caro-card"}>
                             <Route path={"/0"} />
                             <LandingPage />
 
                         </Slide>
 
-                        <Slide index={1}>
+                        <Slide index={1}
+                            className={"caro-card"}>
                             <Route path={"/1"} />
                             <PCLTesting />
 
                         </Slide>
 
-                        <Slide index={2}>
+                        <Slide index={2}
+                            className={"caro-card"}>
                             <Route path={"/2"} />
                             <TestPage />
-                            {/*<NavDots />*/}
 
                         </Slide>
                     </Slider>
@@ -66,9 +65,7 @@ function App() {
                     <NavDots />
 
                 </CarouselProvider>
-
             </BrowserRouter>
-
         </div>
 
     );
