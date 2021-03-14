@@ -1,13 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*    outline: 0;*/
+/*    font-size: 100%;*/
+/*    !*vertical-align: baseline;*!*/
+/*    background: transparent;*/
+/*}*/
+
+.landing-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EDFCFD;
+    overflow: auto;
+}
+
+.landing-container {
+    height: auto;
+    margin: 20vh auto 20vh;
+    width: 80%;
+}
+
+.heading {
+    align-items: center;
+    padding: 20px;
+    position: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    display: block;
+    /*height: auto;*/
 }
 
 h1 {
@@ -16,7 +41,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     padding-top: 10px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 h2 {
@@ -39,29 +64,33 @@ p {
 }
 
 .options {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     margin-top: 75px;
     margin-bottom: 75px;
-
+    width: 100%;
 }
 
-.options button {
+.landing-button {
+    transition: 2s !important;
     height: 100px;
-    width: 250px !important;
-    font-size: large;
-    margin-right: 50px;
-    margin-left: 50px;
-    color: #153243;
-    border: 2px solid #179da6 !important;
-    border-radius: 10px;
+    width: 250px;
+    font-size: large !important;
+    margin: 50px;
+    background-color: #2a72a2 !important;
+    border-radius: 50px !important;
     font-family: 'Montserrat', sans-serif;
+    color: white !important;
+}
 
+.landing-button:hover {
+    transition: 2s;
+    background-color: dodgerblue !important;
 }
 
 
-.main-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #EDFCFD;
-}
+/*.main-container {*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    background-color: #EDFCFD;*/
+/*}*/

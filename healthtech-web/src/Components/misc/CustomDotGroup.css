@@ -1,0 +1,17 @@
+.nav-button {
+    transition: 1s;
+    background-color: #7c7287;
+    opacity: 100%;
+}
+
+.nav-button:disabled {
+    transition: 1s;
+    background-color: #153243 !important;
+    opacity: 100%;
+}
+
+.nav-button:hover {
+    transition: 1s;
+    background-color: #179da6;
+    opacity: 100%;
+}
