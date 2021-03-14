@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import TestPage from "./pages/testpage";
+import PCLTesting from './Components/PCLTesting/PCLTesting';
 import LandingPage from "./Components/LandingPage/LandingPage";
 import CustomDotGroup from "./Components/misc/CustomDotGroup";
 
@@ -71,6 +72,8 @@ function App() {
             </BrowserRouter>
 
         </div>
+
+        // <PCLTesting/>
     );
 }
 
