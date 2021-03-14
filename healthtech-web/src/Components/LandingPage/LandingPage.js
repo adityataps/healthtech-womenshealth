@@ -14,12 +14,12 @@ export default class LandingPage extends React.Component {
 
                     <h1>Know Your Treatment Options</h1>
                     <h2>Precancerous Cervical Lesions (PCLs) </h2>
-                    <p>Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information</p>
+                    <p>Precancerous cervical lesions (PCLs) are conditions where neoplastic cells in the lining of the cervix could become malignant and ultimately become cervical cancer.</p>
                     <div className="options">
                         {/*<Button className={"landing-button"}> Cryotherapy </Button>*/}
                         {/*<Button className={"landing-button"}> Thermocoagulation </Button>*/}
                     </div>
-                    <p>Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information</p>
+                    <p>Click on the eggs below to learn more about PCLs and how to treat them.</p>
 
 
                 </div>
