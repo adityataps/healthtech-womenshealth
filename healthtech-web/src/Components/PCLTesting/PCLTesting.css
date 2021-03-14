@@ -38,21 +38,35 @@ p {
     font-weight: 400;
 }
 
+.Pap {
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+
 .HPV {
     /* background-color:; */
     word-wrap: break-word;
     align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 33%;
 
 }
 
 .VIA {
     /* background-color: #153243; */
     word-wrap: break-word;
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
+    width: 33%;
 }
 
 .VIA p {
-    font-size: 10px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
 }
 
 
