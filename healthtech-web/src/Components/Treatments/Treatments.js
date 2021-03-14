@@ -14,7 +14,7 @@ export default function Treatments() {
 
                 <h1> Which treatment is right for me? </h1>
                 <h2>
-                    Treatment lipsum
+                    Cryotherapy and thermocoagulation are two methods to eliminate neoplastic PCL cells
                 </h2>
 
                 <CarouselProvider
