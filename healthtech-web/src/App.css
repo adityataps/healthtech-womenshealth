@@ -6,3 +6,27 @@
 .card {
     overflow: hidden
 }
+
+.navs {
+    width: 100vw;
+    /*height: 80px;*/
+    margin: 12% auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.nav-container {
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(110,110,110,1) 0%, rgba(0,0,0,0) 100%);
+
+    backdrop-filter: blur(20px);
+    position: fixed;
+    bottom: 0;
+    height: 20%;
+
+}
+
