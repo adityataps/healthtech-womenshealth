@@ -1,0 +1,45 @@
+.tx-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EDFCFD;
+    overflow: auto;
+    /*padding: 20px;*/
+}
+
+.tx-container {
+    height: auto;
+    margin: 10vh auto 10vh;
+    width: 80%;
+}
+
+.tx-caro {
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #179da6;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #153243;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #153243;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 400;
+}

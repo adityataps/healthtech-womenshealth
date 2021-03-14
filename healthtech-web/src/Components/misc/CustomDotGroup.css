@@ -2,6 +2,8 @@
     transition: 1s;
     background-color: #7c7287;
     opacity: 100%;
+    border-radius: 10px !important;
+    /*margin: 10px*/
 }
 
 .nav-button:disabled {

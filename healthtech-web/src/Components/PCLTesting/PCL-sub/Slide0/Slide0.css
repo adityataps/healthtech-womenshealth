@@ -1,0 +1,12 @@
+.slide-0-text {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+

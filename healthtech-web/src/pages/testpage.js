@@ -12,6 +12,7 @@ function TestPage() {
                 >
 
                 <b style={{"fontSize": "300px"}}> Hello this is Senor Test page </b>
+                <b style={{"fontSize": "300px"}}> Hello this is Senor Test page </b>
 
             </OverlayScrollbarsComponent>
         </div>

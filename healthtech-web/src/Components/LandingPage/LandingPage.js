@@ -13,11 +13,11 @@ export default class LandingPage extends React.Component {
                 <div className={"landing-container"}>
 
                     <h1>Know Your Treatment Options</h1>
-                    <h2>Precancerous Cervical Lesions</h2>
+                    <h2>Precancerous Cervical Lesions (PCLs) </h2>
                     <p>Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information</p>
                     <div className="options">
-                        <Button className={"landing-button"}> Cryotherapy </Button>
-                        <Button className={"landing-button"}> Thermocoagulation </Button>
+                        {/*<Button className={"landing-button"}> Cryotherapy </Button>*/}
+                        {/*<Button className={"landing-button"}> Thermocoagulation </Button>*/}
                     </div>
                     <p>Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information Pre-cervical cancer lesion information</p>
 
